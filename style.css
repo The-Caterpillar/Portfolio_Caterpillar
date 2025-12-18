@@ -461,17 +461,19 @@ a{
 #project1{
     background-image: url(green.avif);
 }
-#project2{
+#project5{
     margin-left:130px ;
+    background-image: url(crypto.jpg);
+}
+#project2{
     background-image: url(womania.avif);
 }
 #project3{
+    margin-left:130px ;
     background-image: url(listeners2.avif);
 }
 #project4{
-    margin-left:130px ;
     background-image: url(physio1.jpg);
-
 }
 
 .navbar .fa-solid{
