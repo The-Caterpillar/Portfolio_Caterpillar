@@ -459,7 +459,7 @@ a{
 }
 
 #project1{
-    background-image: url(physio1.jpg);
+    background-image: url(green.avif);
 }
 #project2{
     margin-left:130px ;
@@ -470,7 +470,8 @@ a{
 }
 #project4{
     margin-left:130px ;
-    background-image: url(green.avif);
+    background-image: url(physio1.jpg);
+
 }
 
 .navbar .fa-solid{
@@ -697,181 +698,52 @@ a{
 
 
 
+
 /* Contact Me Section */
-.Contact-footer{
-    position: relative;
-    background-color: black;
-    width: 100%;
-}
-.CMe {
-    width:80%;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding: 2rem 6rem;
+/* FOOTER */
+.Contact-footer {
+  width: 100%;
+  background: black;
+  padding: 4rem 0;
+  margin-top: 8.2em;
 }
 
-.contact-left{
-    margin-top: 0em;
-    flex-basis: 30%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #f04545 ;
-    margin-right: 15px ;
-    font-size: 25 px;
-}
-.icons-wrapper{
-    margin-top: 30px;
-    display: flex;
-    gap: 2rem;
-}
-.icons-wrapper a{
-    font-size: 30px;
-    margin-right: 15px ;
-}
-.button-down{
-    position: relative;
-    margin-top: 50px;
-    font-size: 18px;
-    font-style: bold;
-    padding: 0.5em 1em;
-}
-.button-down a{
-    text-decoration: none;
-    color: white;
-}
-.button-down a:hover{
-    text-decoration: none;
-    color: black;
-}
-.contact-section {
-    flex-basis: 60%;
-}
-.contact-section form{
-    width: 90%;
-}
-form input,form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin-bottom: 15px;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 6px;
-}
-.Contact-me-heading {
-    font-size: 3rem;
-    color: rgb(255, 34, 0);
-}
-.Contact-me-Sub-heading
-{
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1em;
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
 }
 
-
-/* .Contact-Me-Form {
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-
-
-/* .footer-wrapper{
-    display: flex;
-    gap: 111rem;
-    padding: 1.2rem;
-    justify-content: space-between;
-    margin-top: 13%;
-} */
-/* .footer-faded-text{
-position: absolute;
-left: 0;
-bottom: 0;
-color: #535c87;
-user-select: none;
-font-size: 30px;
-font-weight: 500;
+/* ICONS */
+.icons-wrapper {
+  display: flex;
+  gap: 2.5rem;
 }
-.link-wrapper{
-    display: flex;
-    gap: 2rem;
+
+.icons-wrapper a i {
+  font-size: 30px;
+  color: #ffffff;
+  transition: 0.3s;
 }
-.link-wrapper div a{
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+
+.icons-wrapper a i:hover {
+  color: rgb(255, 34, 0);
+  transform: scale(1.2);
 }
-.link-wrapper div a:hover{
-    color: rgb(255, 34, 0);
-    text-decoration: none;
-} */
 
+/* BUTTON */
+.button-down {
+  font-size: 18px;
+  padding: 0.6rem 1.8rem;
+  background: rgb(255, 34, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-/* New contact ME section */
-/* 
-
-
-<div>
-                    <div class="footer-wrapper">
-
-                        <div class="footer-faded-text">Saraswati Tiwari</div>
-
-                        <div class="icon-wrapper">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                            <i class="fa-brands fa-github icon"></i>
-                            <i class="fa-brands fa-twitter icon"></i>
-                            <i class="fa-brands fa-instagram icon"></i>
-                            <i class="fa-regular fa-envelope icon"></i>
-                        </div>
-
-                        <div class="link-wrapper">
-                            <div>
-                                <a href="#projects">Projects</a>
-                            </div>
-                            <div>
-                                <a href="#Skills">Skills</a>
-                            </div>
-                            <div>
-                                <a href="#contacts">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-*/
-/* <div id="contact2"> <!-- Contact me new section -->
-                <div class="container">
-                    <div class="con-container">
-                    <div class="row">
-                        
-                        <div class="contact-right">
-                            <form action="">
-                                <div>
-
-                                    <input type="text" name="name" id=""
-                                    placeholder="Your name"/>
-        
-                                    <input type="email" name="email" id=""
-                                    placeholder="Email address" />
-        
-                                    <textarea name="message" id="" rows="6"
-                                    placeholder="Type your message here">
-                                    </textarea>
-
-                                    <button type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div> */
+.button-down:hover {
+  opacity: 0.85;
+}
