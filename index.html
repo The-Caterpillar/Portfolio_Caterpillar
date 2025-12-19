@@ -103,8 +103,8 @@
             <!-- Project card 1 -->
             <!-- Shopping Website -->
             <div class="Project-Card" id="project1">
-              <div class="project-number project-number-left">01</div>
-              <div class="project-content project-content-right">
+              <div class="project-number project-number-right">01</div>
+              <div class="project-content project-content-left">
                 <div class="project-skills-container">
                   <img
                     class="skill skill-size"
@@ -158,7 +158,7 @@
                     rel="noopener noreferrer"
                   >
                     <button type="button" class="button-pink button-project">
-                      The Green Almirah
+                      Visit
                     </button>
                   </a>
                 </div>
@@ -223,7 +223,7 @@
                     rel="noopener noreferrer"
                   >
                     <button type="button" class="button-pink button-project">
-                      Crypto-Dash
+                      Visit
                     </button>
                   </a>
                 </div>
@@ -233,8 +233,8 @@
             <!-- Project card 2 -->
             <!-- Female health, hormones and period tracker -->
             <div class="Project-Card" id="project2">
-              <div class="project-number project-number-left">02</div>
-              <div class="project-content project-content-right">
+              <div class="project-number project-number-right">02</div>
+              <div class="project-content project-content-left">
                 <div class="project-skills-container">
                   <img
                     class="skill skill-size"
@@ -263,8 +263,7 @@
                 <p class="project-sub-heading">
                   A website to work as a community for women and educate them
                   about their second brain- their hormones and the health
-                  issues, physical and mental, those arise due to hormonal
-                  imbalances.
+                  issues, physical and mental, related to them.
                 </p>
 
                 <div class="button-group">
@@ -284,7 +283,7 @@
                     rel="noopener noreferrer"
                   >
                     <button type="button" class="button-pink button-project">
-                      Womania
+                      Visit
                     </button>
                   </a>
                 </div>
@@ -294,7 +293,7 @@
             <!-- Project card 3 -->
              <!-- Password generator -->
             <div class="Project-Card" id="project3">
-              <div class="project-number project-number-right">03</div>
+              <div class="project-number project-number-left">03</div>
               <div class="project-content project-content-right">
                 <div class="project-skills-container">
                   <img
@@ -336,7 +335,7 @@
                     rel="noopener noreferrer"
                   >
                     <button type="button" class="button-pink button-project">
-                      password generator
+                      Visit
                     </button>
                   </a>
                 </div>
@@ -522,7 +521,7 @@
 
         <!-- FOOTER -->
 
-        <div id="contacts" class="container Contact-footer">
+<div id="contacts" class="container Contact-footer">
   <div class="footer-center">
 
     <div class="icons-wrapper">
@@ -593,17 +592,26 @@
       });
     </script>
 
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzjlDWiSI5O6XAf_7D4MNMP-rWJRgcRMigm-5Bv7Xe5LP06TfQuTCtmsmLnM5ID4N6pZg/exec";
-      const form = document.forms["submit-to-google-sheet"];
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
+    <script>
+      const navMenu = document.querySelector(".nav-items");
+      const openBtn = document.querySelector(".fa-bars");
+      const closeBtn = document.querySelector(".fa-circle-xmark");
+
+        closeBtn.style.display = "none";
+
+      openBtn.addEventListener("click", () => {
+        navMenu.style.display = "flex";
+        openBtn.style.display = "none";
+        closeBtn.style.display = "block";
       });
+
+      closeBtn.addEventListener("click", () => {
+        navMenu.style.display = "none";
+        closeBtn.style.display = "none";
+        openBtn.style.display = "block";
+      });
+
     </script>
   </body>
 </html>
