@@ -626,9 +626,17 @@ a{
 
 
 /* My Skills section */
-
+.skills-container{
+    max-width: 90% !important;
+    padding: 3rem !important;
+    padding-bottom: 0 !important;
+    margin-top: 5rem !important;
+}
+.skill-container-left{
+    width: 60%;
+}
 .skill-container-right{
-    gap: 1rem;
+    gap: 9px !important;
 }
 .skills-logo{
     width: 50px !important;
@@ -640,11 +648,11 @@ a{
     font-size:2em !important;
     font-style: bold;
     color: rgb(255, 34, 0);
-    line-height: 20px;
+    line-height: 30px !important;
 }
 .skill-subHeading{
     margin-top: 1rem;
-    text-align: justify;
+    text-align: left !important;
 }
 .skill-subHeading p{
     margin: 5px 0;
