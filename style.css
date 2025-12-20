@@ -190,23 +190,19 @@ a{
 }
 .user-image{
     padding: 2.5rem;
-    filter: grayscale(1);
     transition: all 1s;
     animation: user-Image 5s linear infinite;
 }
 @keyframes user-Image {
     0%{
-        filter: grayscale(0) brightness(2) contrast(1) ;
         transform: scale(1);    }
 
     50%{
         transform: scale(1.081);
-        filter: grayscale(1) brightness(2) contrast(1);
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.211);
     }
     100%{
         transform: scale(1);
-        filter: grayscale(0) brightness(2) contrast(1);
     }
 }
 .circle{
@@ -581,7 +577,6 @@ a{
     .user-image
     {
         padding: 0.5rem;
-        filter: grayscale(1);
         transition: all 1s;
         animation: user-Image 5s linear infinite;
     }
@@ -759,7 +754,6 @@ a{
     .user-image
     {
         padding: 0.5rem;
-        filter: grayscale(1);
         transition: all 1s;
         animation: user-Image 5s linear infinite;
     }
