@@ -544,6 +544,7 @@ a{
     .hero-left{
         width:90%;
         gap:2%;
+        margin-left: -2em;
     }
     .hero-heading{
         font-size: 1rem;
