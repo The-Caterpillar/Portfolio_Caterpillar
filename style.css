@@ -528,7 +528,7 @@ a{
 
 .hero-section
     {
-        width: 100%;
+        width: 76%;
         gap: 1rem;
         margin: 2rem;
         padding: 1rem;
@@ -542,9 +542,8 @@ a{
         font-size:0;
     }
     .hero-left{
-        width:86%;
+        width:100%;
         gap:2%;
-        margin-left: -2em;
     }
     .hero-heading{
         font-size: 1rem;
@@ -557,19 +556,18 @@ a{
     }
     .hero-description{
         font-size: small;
-        width:80%;
+        width:100%;
     }
 
 
     /* Hero section right */
     .hero-right{
         position:relative;
-        width: 45%;
+        width: 60%;
         margin-bottom: 1em;
-        margin-right: 5em;
     }
     .size{
-        width: 2em;
+        width: 1em;
     }
     .u-image{
        height: 40vw;
